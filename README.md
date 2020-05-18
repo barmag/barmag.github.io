@@ -1,1 +1,0 @@
-# barmag.github.io
