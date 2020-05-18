@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title:  "Microservices Patterns Chapter 1 Notes"
 date:   2020-05-17 12:50:48 +0200
 categories: readings
@@ -14,7 +14,7 @@ Sunday, May 17, 2020
 This is my personal notes for **"Microservices Patterns"** book by Chris Richardson [<span class="underline">https://microservices.io/book</span>](https://microservices.io/book)
 
 
-**Chapter 1**
+## Chapter 1
 
 The first section of this chapter covers the monolithic hell and makes the case of Microservices with a story about a fictitious company and its struggle with maintaining and growing a monolithic app.
 
@@ -38,53 +38,37 @@ Section 1.6 is the most informative in this chapter, and specifically 1.6.3. It 
 
 Chris classifies the patterns into three main layers. Application, Application Infrastructure, and Infrastructure patterns.
 
-<img src="media/image1.png" style="width:6.18056in;height:3.75in" />
+![patterns taxonomy]({{ site.url }}/assets/media/image1.png)
 
-**Application Patterns**
+*  **Application Patterns**
+    * Decomposition
+    * Database Architecture
+    * Querying
+    * Maintaining Data Consistency
+    * Testing
+* **Application Infrastructure Patterns**
+    * Cross-cutting Concerns
+    * Security
+    * Transactional Messaging
+    * Communication Style
+    * Reliability
+    * Observability
+* **Infrastructure Patterns**
+    * Deployment
+    * Discovery
+    * External API
 
-**Decomposition**
+**Chapter 2** describes decomposition patterns in details. Chris describes it as a set of strategies for decomposing an application into Microservices.
 
-**Database Architecture**
+**Chapter 3** drills down into communication patterns including communication style, reliability, and transaction messaging while **Chapter 8** covers external API patterns.
 
-**Querying**
+**Chapter 4, 5, and 6** cover the strategies for data storage in the context of Microservices and the challenges associated with maintaining a database per service. Saga pattern is described in detail as an alternative to 2PC approach for distributed transactions.
 
-**Maintaining Data Consistency**
+Another challenge with database decomposition is querying data scattered around multiple services. **Chapter 7** details a set of different patterns for implementing queries.
 
-**Testing**
+**Chapter 12** focuses on deployment of Microservices either as VM, container, or serverless. While Chapter 11 details application observability patterns including health check API, log aggregation, distributed tracing, exception tracking, application metrics, and audit logging. **Chapter 11** also describes Microservices Chassis pattern for handling cross-cutting concerns like observability and discovery. **Chapter 11** also discusses security, and access token pattern in detail.
 
-**Application Infrastructure Patterns**
-
-**Cross-cutting Concerns**
-
-**Security**
-
-**Transactional Messaging**
-
-**Communication Style**
-
-**Reliability**
-
-**Observability**
-
-**Infrastructure Patterns**
-
-**Deployment**
-
-**Discovery**
-
-**External API**
-
-Chapter 2 describes decomposition patterns in details. Chris describes it as a set of strategies for decomposing an application into Microservices.
-
-Chapter 3 drills down into communication patterns including communication style, reliability, and transaction messaging while Chapter 8 covers external API patterns.
-
-Chapter 4, 5, and 6 cover the strategies for data storage in the context of Microservices and the challenges associated with maintaining a database per service. Saga pattern is described in detail as an alternative to 2PC approach for distributed transactions.
-
-Another challenge with database decomposition is querying data scattered around multiple services. Chapter 7 details a set of different patterns for implementing queries.
-
-Chapter 12 focuses on deployment of Microservices either as VM, container, or serverless. While Chapter 11 details application observability patterns including health check API, log aggregation, distributed tracing, exception tracking, application metrics, and audit logging. Chapter 11 also describes Microservices Chassis pattern for handling cross-cutting concerns like observability and discovery. Chapter 11 also discusses security, and access token pattern in detail.
-
-Chapter 9 and 10 focus on patterns for services automated testing with patterns for testing services in isolation with consumer-driven contract test, consumer-side contract test, and service component test.
+**Chapter 9 and 10** focus on patterns for services automated testing with patterns for testing services in isolation with consumer-driven contract test, consumer-side contract test, and service component test.
 
 The final section of this introductory chapter gives a good piece of wisdom about the non-technical aspect of implementing Microservices, and the need of organizational changes and consideration to the human side.
 
