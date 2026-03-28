@@ -1,3 +1,9 @@
+---
+layout: post
+title: "Lessons from the Trenches: How We Paid Less and Got More from AWS"
+date: 2020-07-09 12:00:00 +0000
+categories: aws cloud
+---
 I am old enough to have used CORBA, and COM+. Lucky enough to be building distributed loosely coupled systems for 20 years. Now witnessing how easy and accessible distributed technology have become. Many of the principles have not changed, but reflecting on my experience with modern cloud native architecture that building resilient and scalable system with PaaS cloud platforms is much cheaper than both on premises or monolithic IaaS. The on demand, pay for use model costs fractions of provisioned infrastructure, not only money, but also time. 
 
 In a previous project I joined the team right after moving the infrastructure to AWS, and the team was using nothing but EC2, and VPCs. The cloud services from AWS enabled us to move incrementally to modernize the system with controlled risk. 

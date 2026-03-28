@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title:  "Microservices Patterns Chapter 1 Notes"
 date:   2020-05-17 12:50:48 +0200
 categories: readings
@@ -10,7 +10,7 @@ Sunday, May 17, 2020
 
 10:24 PM
 
- 
+ 
 This is my personal notes for **"Microservices Patterns"** book by Chris Richardson [<span class="underline">https://microservices.io/book</span>](https://microservices.io/book)
 
 
