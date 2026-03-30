@@ -21,6 +21,9 @@ url: "https://barmag.github.io"
 github_username:  barmag
 show_excerpts: true
 
+# Analytics
+google_analytics: G-LZJQ01M3KX
+
 # Build settings
 markdown: kramdown
 theme: minima
