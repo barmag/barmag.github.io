@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://barmag.github.io/sitemap.xml
