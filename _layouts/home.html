@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{%- if site.description -%}
+<p class="home-bio">{{ site.description }}</p>
+{%- endif -%}
+
+<ul class="post-list">
+  {%- for post in site.posts -%}
+  <li class="post-list-item">
+    {% include post-meta.html post=post %}
+    <h2 class="post-list-title">
+      <a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    </h2>
+    {%- if site.show_excerpts -%}
+    <p class="post-list-excerpt">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+    {%- endif -%}
+  </li>
+  {%- endfor -%}
+</ul>

@@ -1,0 +1,88 @@
+// barmag — page layout, header band, footer
+
+.site-header { position: relative; }
+
+.band {
+  background: var(--color-band);
+  color: var(--color-band-ink);
+  padding: 0.85rem 1.4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.85rem;
+  color: var(--color-band-ink);
+  text-decoration: none;
+}
+.wordmark-latin {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 1rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+.wordmark-arabic {
+  font-family: var(--font-arabic);
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.site-nav {
+  display: inline-flex;
+  align-items: center;
+  gap: 1.1rem;
+  font-family: var(--font-meta);
+  font-size: 0.7rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+.nav-link {
+  color: var(--color-band-ink);
+  text-decoration: none;
+  opacity: 0.88;
+}
+.nav-link:hover { opacity: 1; color: var(--color-accent); }
+
+// .khatam-strip is styled in _components.scss (Task 6)
+
+.site-main {
+  width: var(--col-width);
+  margin: 2.5rem auto 4rem;
+}
+
+.site-footer {
+  border-top: 1px solid var(--color-rule);
+  margin-top: 4rem;
+  padding: 1.4rem 0;
+  color: var(--color-muted);
+  font-family: var(--font-meta);
+  font-size: 0.75rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.footer-inner {
+  width: var(--col-width);
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer-feed {
+  color: var(--color-muted);
+  text-decoration: none;
+}
+.footer-feed:hover { color: var(--color-heading); }
+
+@media (max-width: 540px) {
+  .band { padding: 0.75rem 1rem; }
+  .wordmark { gap: 0.6rem; }
+  .wordmark-latin { font-size: 0.9rem; letter-spacing: 0.28em; }
+  .wordmark-arabic { font-size: 1.3rem; }
+  .site-nav { gap: 0.8rem; font-size: 0.65rem; }
+}

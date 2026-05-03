@@ -1,0 +1,7 @@
+<div class="khatam-strip" aria-hidden="true">
+  <svg class="khatam-strip-svg" viewBox="0 0 360 18" preserveAspectRatio="xMidYMid meet">
+    {% for n in (0..23) %}
+    <use href="#khatam" x="{{ n | times: 16 | minus: 6 }}" y="2" width="14" height="14"></use>
+    {% endfor %}
+  </svg>
+</div>

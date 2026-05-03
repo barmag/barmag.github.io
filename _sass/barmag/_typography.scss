@@ -1,0 +1,73 @@
+// barmag — typography + base reset
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+// Display headings — Cormorant
+h1, h2, h3, h4 {
+  font-family: var(--font-display);
+  color: var(--color-heading);
+  font-weight: 600;
+  line-height: 1.18;
+  margin: 1.6em 0 0.5em;
+  letter-spacing: -0.005em;
+}
+h1 { font-size: var(--fs-h1); margin-top: 0; }
+h2 { font-size: var(--fs-h2); }
+h3 { font-size: var(--fs-h3); }
+
+p { margin: 0 0 1em; }
+
+a {
+  color: var(--color-heading);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:hover { color: var(--color-accent); }
+
+blockquote {
+  margin: 1.5em 0;
+  padding: 0.4em 1.2em;
+  border-left: 3px solid var(--color-accent);
+  color: var(--color-muted);
+  font-style: italic;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: var(--color-rule);
+  margin: 2em 0;
+}
+
+code, pre {
+  font-family: var(--font-mono);
+  font-size: 0.9em;
+}
+code { background: var(--color-bg-alt); padding: 0.1em 0.35em; border-radius: 3px; }
+pre {
+  background: var(--color-bg-alt);
+  padding: 1em 1.2em;
+  border-radius: 4px;
+  overflow-x: auto;
+  border: 1px solid var(--color-rule);
+}
+pre code { background: none; padding: 0; }
+
+img { max-width: 100%; height: auto; display: block; }
+
+::selection { background: var(--color-accent); color: var(--color-bg); }

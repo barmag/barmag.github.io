@@ -1,0 +1,35 @@
+// barmag — design tokens (Andalusian / Mamluk palette)
+// Light values are defaults on :root.
+// Dark overrides live in _dark.scss under [data-theme="dark"].
+
+:root {
+  // Palette — light (sandstone + cobalt + gold)
+  --color-bg:       #F5ECD9;
+  --color-bg-alt:   #EFE3CB;
+  --color-ink:      #2D2418;
+  --color-muted:    #8A7A52;
+  --color-heading:  #1F3A5F;
+  --color-accent:   #C9A447;
+  --color-rule:     #E0D4BA;
+  --color-band:     #1F3A5F;
+  --color-band-ink: #F5ECD9;
+
+  // Typography stacks
+  --font-body:    'Iowan Old Style', 'Palatino Linotype', Palatino, Georgia, serif;
+  --font-display: 'Cormorant Garamond', 'Iowan Old Style', Georgia, serif;
+  --font-arabic:  'Amiri', serif;
+  --font-meta:    -apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif;
+  --font-mono:    ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+
+  // Sizes
+  --fs-body: 1.0625rem;
+  --lh-body: 1.65;
+  --fs-h1:   2.25rem;
+  --fs-h2:   1.5rem;
+  --fs-h3:   1.25rem;
+  --fs-meta: 0.75rem;
+  --tracked: 0.06em;
+
+  // Layout
+  --col-width: min(70ch, 100% - 2.5rem);
+}
