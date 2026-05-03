@@ -9,6 +9,7 @@ lang: en
 
 # URLs
 permalink: /:year/:month/:day/:title/
+timezone: Europe/Berlin
 
 # Header navigation (consumed by _includes/header.html)
 header_pages:
