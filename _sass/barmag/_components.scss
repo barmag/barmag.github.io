@@ -119,3 +119,13 @@
   font-style: italic;
 }
 .post-nav a:hover .post-nav-title { color: var(--color-accent); }
+
+// Static pages
+
+.page-title {
+  font-family: var(--font-display);
+  font-size: var(--fs-h1);
+  font-weight: 600;
+  color: var(--color-heading);
+  margin: 0 0 1.5rem;
+}
