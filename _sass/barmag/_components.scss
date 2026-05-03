@@ -1,0 +1,24 @@
+// barmag — components
+
+.khatam-strip {
+  background: var(--color-band);
+  color: var(--color-accent);
+  padding: 0.3rem 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+.khatam-strip-svg {
+  width: 100%;
+  max-width: 380px;
+  height: 18px;
+  display: block;
+}
+
+.khatam-glyph {
+  display: flex;
+  justify-content: center;
+  color: var(--color-accent);
+  margin: 1.5rem 0 1rem;
+}
+.khatam-glyph svg { display: block; }
