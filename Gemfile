@@ -28,3 +28,10 @@ end
 gem "wdm", "~> 0.1.0", :install_if => Gem.win_platform?
 
 gem "github-pages", "~> 232", group: :jekyll_plugins
+gem "webrick", "~> 1.8"
+
+# Ruby 3.4 dropped these from the default gems
+gem "bigdecimal"
+gem "csv"
+gem "logger"
+gem "base64"
