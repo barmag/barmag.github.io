@@ -1,0 +1,19 @@
+// barmag — warm-dark theme overrides
+
+[data-theme="dark"] {
+  --color-bg:       #1A140C;
+  --color-bg-alt:   #241B10;
+  --color-ink:      #EFE3CB;
+  --color-muted:    #A89570;
+  --color-heading:  #D8B358;
+  --color-accent:   #D8B358;
+  --color-rule:     #3A2E1C;
+  --color-band:     #0F1F36;
+  --color-band-ink: #EFE3CB;
+}
+
+[data-theme="dark"] .post-list-title a:hover,
+[data-theme="dark"] a:hover { color: #ECC772; }
+
+[data-theme="dark"] code,
+[data-theme="dark"] pre { background: var(--color-bg-alt); border-color: var(--color-rule); }
