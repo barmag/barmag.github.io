@@ -1,0 +1,45 @@
+name: Generate OG images
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - '_posts/**'
+      - 'scripts/og/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - '.github/workflows/og-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  og:
+    runs-on: ubuntu-latest
+    if: github.actor != 'github-actions[bot]'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - run: npm ci --no-audit --no-fund
+
+      - run: npm run og
+
+      - name: Commit generated cards
+        run: |
+          if [ -n "$(git status --porcelain assets/og)" ]; then
+            git config user.name 'github-actions[bot]'
+            git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+            git add assets/og
+            git commit -m "Regenerate OG images"
+            git push
+          else
+            echo "No OG image changes."
+          fi

@@ -5,3 +5,4 @@ _site
 vendor/
 .bundle/
 .superpowers/
+node_modules/
