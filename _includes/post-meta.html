@@ -1,0 +1,8 @@
+{%- assign meta_target = include.post | default: page -%}
+{%- assign words = meta_target.content | number_of_words -%}
+{%- assign minutes = words | divided_by: 220 | plus: 1 -%}
+<p class="post-meta">
+  <time datetime="{{ meta_target.date | date_to_xmlschema }}">{{ meta_target.date | date: "%b %-d, %Y" }}</time>
+  <span class="post-meta-sep">·</span>
+  <span class="post-meta-time">{{ minutes }} min read</span>
+</p>

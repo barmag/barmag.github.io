@@ -22,3 +22,44 @@
   margin: 1.5rem 0 1rem;
 }
 .khatam-glyph svg { display: block; }
+
+// Homepage
+
+.home-bio {
+  font-style: italic;
+  color: var(--color-muted);
+  font-size: 1rem;
+  margin: 0 0 2rem;
+  max-width: 60ch;
+}
+
+.post-list { list-style: none; padding: 0; margin: 0; }
+.post-list-item { padding: 1.4rem 0; }
+.post-list-item + .post-list-item { border-top: 1px solid var(--color-rule); }
+
+.post-list-title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0.25rem 0 0.4rem;
+  line-height: 1.18;
+}
+.post-list-title a { color: var(--color-heading); text-decoration: none; }
+.post-list-title a:hover { color: var(--color-accent); }
+
+.post-list-excerpt {
+  margin: 0;
+  font-size: 0.95rem;
+  color: var(--color-ink);
+  line-height: 1.55;
+}
+
+.post-meta {
+  font-family: var(--font-meta);
+  font-size: var(--fs-meta);
+  letter-spacing: var(--tracked);
+  text-transform: uppercase;
+  color: var(--color-accent);
+  margin: 0;
+}
+.post-meta-sep { margin: 0 0.4rem; opacity: 0.7; }
